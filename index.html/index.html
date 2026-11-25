@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ESP32 Academy</title>
+<link rel="icon" type="image/png" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#101a2d">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar" id="sidebar">
+    <h2>⚡ ESP32<span>ACADEMY</span></h2>
+    <p class="menu-title">MAIN MENU</p>
+    <nav>
+        <a href="#dashboard">🏠 Dashboard</a>
+        <a href="#learning">📚 Learning Center</a>
+        <a href="#projects">🔧 Projects</a>
+        <a href="#boards">💻 Board Explorer</a>
+        <a href="#pinout">📌 Pinout Reference</a>
+        <a href="#components">🧩 Components</a>
+        <a href="#visual">🧪 Visual Lab</a>
+        <a href="#simulator">⚡ Circuit Simulator</a>
+        <a href="#code">⌨️ Code Studio</a>
+        <a href="#wireless">📡 Wi-Fi & Bluetooth</a>
+        <a href="#quiz">🎯 Quiz Center</a>
+        <a href="#wiring">🔌 Wiring Studio</a>
+        <a href="#tools">🛠️ Tools</a>
+        <a href="#achievements">🏆 Achievements</a>
+        <a href="#settings">⚙️ Settings</a>
+    </nav>
+    <p class="sidebar-bottom">LEARN • BUILD • CREATE</p>
+</aside>
+
+<main class="main">
+
+<header class="topbar">
+    <button id="menuBtn" class="menu-btn">☰</button>
+    <div>
+        <h3>ESP32 Academy</h3>
+        <p>Explore. Learn. Build.</p>
+    </div>
+    <input id="search" type="search" placeholder="Search academy...">
+</header>
+
+<section id="dashboard" class="hero">
+    <span class="tag">WELCOME TO YOUR LEARNING WORLD</span>
+    <h1>MASTER THE<br><span>ESP32</span></h1>
+    <p>Learn electronics, explore microcontrollers and build amazing projects.</p>
+    <a href="#learning" class="primary-btn">START LEARNING →</a>
+</section>
+
+<section class="content-section">
+    <h2>Academy Dashboard</h2>
+    <div class="stats">
+        <article><h3>📚</h3><strong>15</strong><p>Learning Sections</p></article>
+        <article><h3>🔧</h3><strong>100+</strong><p>Project Ideas Planned</p></article>
+        <article><h3>💻</h3><strong>3</strong><p>Board Families</p></article>
+        <article><h3>🎯</h3><strong>500+</strong><p>Quiz Questions Planned</p></article>
+    </div>
+</section>
+
+<section id="learning" class="content-section">
+    <h2>📚 Learning Center</h2>
+    <p class="subtitle">Start from the basics and become an ESP32 builder.</p>
+    <div class="cards">
+        <article><h3>🌱 Beginner</h3><p>Introduction to ESP32, GPIO, power and basic electronics.</p><a href="#boards">Explore →</a></article>
+        <article><h3>⚙️ Intermediate</h3><p>LEDs, sensors, displays, input and output.</p><a href="#components">Explore →</a></article>
+        <article><h3>🚀 Advanced</h3><p>Wi-Fi, Bluetooth, web servers and IoT concepts.</p><a href="#wireless">Explore →</a></article>
+    </div>
+</section>
+
+<section id="projects" class="content-section">
+    <h2>🔧 Project Library</h2>
+    <p class="subtitle">Explore project ideas for your ESP32.</p>
+    <div class="cards searchable">
+        <article><h3>💡 RGB LED Controller</h3><p>Control LED colours using ESP32 GPIO.</p><span>Beginner</span></article>
+        <article><h3>📱 Wi-Fi Controller</h3><p>Control your ESP32 from a phone browser.</p><span>Intermediate</span></article>
+        <article><h3>🌐 Web Server</h3><p>Create a webpage hosted by your ESP32.</p><span>Intermediate</span></article>
+        <article><h3>🔵 Bluetooth Controller</h3><p>Explore wireless communication.</p><span>Intermediate</span></article>
+        <article><h3>⏱️ Digital Timer</h3><p>Create a timer using ESP32.</p><span>Beginner</span></article>
+        <article><h3>🎮 Phone Game Controller</h3><p>Build a simple browser-based controller.</p><span>Advanced</span></article>
+    </div>
+</section>
+
+<section id="boards" class="content-section">
+    <h2>💻 Board Explorer</h2>
+    <div class="cards">
+        <article><h3>ESP32-WROOM-32</h3><p>Explore the classic ESP32 board, GPIO pins and wireless features.</p></article>
+        <article><h3>ESP32-S3</h3><p>Explore the ESP32-S3 family and its features.</p></article>
+        <article><h3>ESP32-C3</h3><p>Discover the ESP32-C3 family.</p></article>
+        <article><h3>ESP32-C6</h3><p>Discover another ESP32 family with newer wireless capabilities.</p></article>
+    </div>
+</section>
+
+<section id="pinout" class="content-section">
+    <h2>📌 Pinout Reference</h2>
+    <div class="panel">
+        <h3>ESP32-WROOM-32</h3>
+        <p>Common GPIO reference for a classic ESP32 development board.</p>
+        <div class="pin-grid">
+            <span>GPIO 0</span><span>GPIO 2</span>
+            <span>GPIO 4</span><span>GPIO 5</span>
+            <span>GPIO 12</span><span>GPIO 13</span>
+            <span>GPIO 14</span><span>GPIO 15</span>
+            <span>GPIO 16</span><span>GPIO 17</span>
+            <span>GPIO 18</span><span>GPIO 19</span>
+            <span>GPIO 21</span><span>GPIO 22</span>
+            <span>GPIO 23</span><span>GPIO 25</span>
+            <span>GPIO 26</span><span>GPIO 27</span>
+            <span>GPIO 32</span><span>GPIO 33</span>
+        </div>
+        <p class="warning">Important: Pin availability and restrictions depend on your exact board. Check its pinout before connecting hardware.</p>
+    </div>
+</section>
+
+<section id="components" class="content-section">
+    <h2>🧩 Component Library</h2>
+    <div class="cards">
+        <article><h3>💡 LEDs</h3><p>Learn about single-colour and RGB LEDs.</p></article>
+        <article><h3>📟 LCD Displays</h3><p>Explore 16x2 LCD and I2C displays.</p></article>
+        <article><h3>📡 Sensors</h3><p>Explore different electronic sensors.</p></article>
+        <article><h3>🔌 Resistors</h3><p>Learn resistance and circuit basics.</p></article>
+        <article><h3>🔘 Buttons</h3><p>Learn digital input controls.</p></article>
+        <article><h3>⚙️ Motors</h3><p>Explore motor-control concepts.</p></article>
+    </div>
+</section>
+
+<section id="visual" class="content-section">
+    <h2>🧪 Visual Lab</h2>
+    <div class="panel">
+        <h3>Virtual LED Experiment</h3>
+        <p>Try changing the virtual LED colour.</p>
+        <div id="virtualLed"></div>
+        <div class="color-buttons">
+            <button data-color="red">RED</button>
+            <button data-color="lime">GREEN</button>
+            <button data-color="blue">BLUE</button>
+            <button data-color="yellow">YELLOW</button>
+            <button data-color="white">WHITE</button>
+            <button data-color="black">OFF</button>
+        </div>
+        <p id="ledStatus">LED is OFF</p>
+    </div>
+</section>
+
+<section id="simulator" class="content-section">
+    <h2>⚡ Circuit Simulator</h2>
+    <div class="panel">
+        <h3>Simulation Center</h3>
+        <p>This section is reserved for our future interactive circuit simulator.</p>
+        <div class="placeholder">⚡ CIRCUIT SIMULATOR<br><small>Interactive circuit building is coming next.</small></div>
+    </div>
+</section>
+
+<section id="code" class="content-section">
+    <h2>⌨️ Code Studio</h2>
+    <div class="panel">
+        <h3>ESP32 Blink Example</h3>
+        <p>A simple example using GPIO 2. Connect an LED circuit correctly before testing.</p>
+        <pre id="sampleCode">#define LED_PIN 2
+
+void setup() {
+  pinMode(LED_PIN, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(LED_PIN, HIGH);
+  delay(1000);
+
+  digitalWrite(LED_PIN, LOW);
+  delay(1000);
+}</pre>
+        <button id="copyCode">COPY CODE</button>
+        <p id="copyStatus"></p>
+    </div>
+</section>
+
+<section id="wireless" class="content-section">
+    <h2>📡 Wi-Fi & Bluetooth Lab</h2>
+    <div class="cards">
+        <article><h3>📶 Wi-Fi</h3><p>Learn Wi-Fi basics, access points and web servers.</p></article>
+        <article><h3>🔵 Bluetooth</h3><p>Learn Bluetooth communication and device connections.</p></article>
+        <article><h3>🌍 IoT</h3><p>Discover how connected devices communicate.</p></article>
+    </div>
+</section>
+
+<section id="quiz" class="content-section">
+    <h2>🎯 Quiz Center</h2>
+    <div class="panel">
+        <h3 id="question">Which chip is used in the classic ESP32-WROOM-32 module?</h3>
+        <div id="answers">
+            <button class="answer" data-answer="wrong">ATmega328P</button>
+            <button class="answer" data-answer="correct">ESP32</button>
+            <button class="answer" data-answer="wrong">Raspberry Pi</button>
+        </div>
+        <p id="quizResult">Choose your answer!</p>
+        <p id="quizScore">Score: 0</p>
+        <button id="nextQuestion">NEXT QUESTION →</button>
+    </div>
+</section>
+
+<section id="wiring" class="content-section">
+    <h2>🔌 Wiring Diagram Studio</h2>
+    <div class="panel">
+        <p>Our future wiring studio will help you explore virtual connections between ESP32 boards and electronic components.</p>
+        <div class="placeholder">🔌 WIRING WORKSPACE<br><small>Interactive wiring tools coming next.</small></div>
+    </div>
+</section>
+
+<section id="tools" class="content-section">
+    <h2>🛠️ Tools & Calculators</h2>
+    <div class="panel">
+        <h3>Resistor Colour-independent Calculator</h3>
+        <p>Calculate resistance using voltage and current.</p>
+        <label>Voltage (V)</label>
+        <input type="number" id="voltage" placeholder="Example: 5">
+        <label>Current (A)</label>
+        <input type="number" id="current" placeholder="Example: 0.02">
+        <button id="calculate">CALCULATE RESISTANCE</button>
+        <h3 id="calculationResult">Result: --</h3>
+    </div>
+</section>
+
+<section id="achievements" class="content-section">
+    <h2>🏆 Achievements</h2>
+    <div class="cards">
+        <article><h3>🌟 Explorer</h3><p>Visit the academy dashboard.</p></article>
+        <article><h3>📚 Learner</h3><p>Explore the learning center.</p></article>
+        <article><h3>🎯 Quiz Starter</h3><p>Answer your first quiz question.</p></article>
+    </div>
+</section>
+
+<section id="settings" class="content-section">
+    <h2>⚙️ Settings</h2>
+    <div class="panel">
+        <h3>Academy Preferences</h3>
+        <p>Website language: English</p>
+        <p>Theme: Dark technology theme</p>
+        <button id="topButton">BACK TO TOP ↑</button>
+    </div>
+</section>
+
+<footer>
+    <h2>⚡ ESP32 ACADEMY</h2>
+    <p>LEARN • BUILD • SIMULATE • CREATE</p>
+    <p>© 2026 ESP32 Academy</p>
+</footer>
+
+</main>
+<script src="script.js"></script>
+</body>
+</html>
